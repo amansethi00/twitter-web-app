@@ -5122,3 +5122,19 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 61ms (Views: 58.1ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/posts/index" for ::1 at 2020-05-02 18:12:02 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 68ms (Views: 64.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-05-02 18:18:17 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 77ms (Views: 63.3ms | ActiveRecord: 3.1ms)
+
+
