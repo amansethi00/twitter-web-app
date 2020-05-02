@@ -5138,3 +5138,228 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 77ms (Views: 63.3ms | ActiveRecord: 3.1ms)
 
 
+Started GET "/posts/index" for ::1 at 2020-05-03 00:19:32 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (9.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (70.6ms)
+Completed 200 OK in 380ms (Views: 309.0ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/" for ::1 at 2020-05-03 00:19:35 +0530
+Processing by HomeController#top as HTML
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 80ms (Views: 75.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-05-03 00:19:43 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 325ms (Views: 320.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/posts/new" for ::1 at 2020-05-03 00:19:52 +0530
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 59ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/create" for ::1 at 2020-05-03 00:20:05 +0530
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nXkOgt7M0KP2D47jqyvP4LAszUN3RrPZF2KE0pr8adxZ5Gwvc53eFMXGgFzNaaX1xP+Qta1IyXgUeO+p5+8Dyw==", "contents"=>"Hello I am Shaswat Sethi!!"}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (9.0ms)[0m  [1m[32mINSERT INTO "posts" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "Hello I am Shaswat Sethi!!"], ["created_at", "2020-05-02 18:50:05.247305"], ["updated_at", "2020-05-02 18:50:05.247305"]]
+  [1m[35m (19.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 62ms (ActiveRecord: 28.8ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-05-03 00:20:05 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 86ms (Views: 81.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/6" for ::1 at 2020-05-03 00:20:10 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (2.8ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 180ms (Views: 117.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/about" for ::1 at 2020-05-03 00:20:31 +0530
+Processing by HomeController#about as HTML
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 61ms (Views: 56.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-05-03 00:20:49 +0530
+Processing by HomeController#top as HTML
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 61ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2020-05-03 00:20:53 +0530
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 72ms (Views: 67.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2020-05-03 00:21:34 +0530
+Processing by HomeController#about as HTML
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 59ms (Views: 53.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2020-05-03 00:48:31 +0530
+Processing by HomeController#about as HTML
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 56ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2020-05-03 00:48:34 +0530
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 62ms (Views: 59.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-05-03 00:48:38 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 81ms (Views: 66.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/posts/6" for ::1 at 2020-05-03 00:48:41 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 85ms (Views: 70.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/6/edit" for ::1 at 2020-05-03 00:48:42 +0530
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 63ms (Views: 53.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-05-03 00:54:16 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 63ms (Views: 51.7ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/posts/6" for ::1 at 2020-05-03 00:54:18 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 58ms (Views: 47.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/6/edit" for ::1 at 2020-05-03 00:54:20 +0530
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 76ms (Views: 56.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-05-03 01:13:02 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 86ms (Views: 75.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/posts/6" for ::1 at 2020-05-03 01:13:03 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 62ms (Views: 56.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/6/edit" for ::1 at 2020-05-03 01:13:07 +0530
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 76ms (Views: 55.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/posts/6/update" for ::1 at 2020-05-03 01:13:11 +0530
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AXWOWkJMVj/j76N3BEOweZBrFf1mR+9s7FCYqUS9pAIb/eCmonJ6W6oeKKKRmXgKn2hUejKW7I2mdYN6uYYRXQ==", "content"=>"Hello I am Shaswat Sethiiii!!", "id"=>"6"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.1ms)[0m  [1m[33mUPDATE "posts" SET "content" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["content", "Hello I am Shaswat Sethiiii!!"], ["updated_at", "2020-05-02 19:43:11.965830"], ["id", 6]]
+  [1m[35m (16.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 69ms (ActiveRecord: 19.9ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-05-03 01:13:12 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 78ms (Views: 75.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-05-03 01:13:16 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 56ms (Views: 53.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/about" for ::1 at 2020-05-03 01:13:17 +0530
+Processing by HomeController#about as HTML
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 52ms (Views: 49.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-05-03 01:13:19 +0530
+Processing by HomeController#top as HTML
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 66ms (Views: 63.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-05-03 01:13:21 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 70ms (Views: 67.5ms | ActiveRecord: 0.3ms)
+
+
