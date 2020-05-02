@@ -2073,3 +2073,18 @@ Processing by HomeController#top as HTML
 Completed 200 OK in 66ms (Views: 63.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/posts/index" for ::1 at 2020-05-02 07:19:58 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 74ms (Views: 68.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/about" for ::1 at 2020-05-02 07:19:59 +0530
+Processing by HomeController#about as HTML
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 57ms (Views: 54.2ms | ActiveRecord: 0.0ms)
+
+
