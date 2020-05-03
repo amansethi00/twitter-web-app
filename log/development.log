@@ -5606,3 +5606,385 @@ Processing by HomeController#top as HTML
 Completed 200 OK in 81ms (Views: 76.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/posts/new" for ::1 at 2020-05-03 16:31:09 +0530
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 715ms (Views: 659.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/create" for ::1 at 2020-05-03 16:31:13 +0530
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vLZvqjpl/XiSLX7Krw5XxKqLT/R78HeLhb4hFuNsgQJ4Kw0HlzTzz6HkcHXJTD3R3lgSAqH+DSqGpEptnn/rFQ==", "contents"=>""}
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/thehi/Documents/twitter-web-app/app/models/post.rb:2: syntax error, unexpected '{', expecting end
+    validates:content {prsence:true,length:{maximum:...
+                      ^
+C:/Users/thehi/Documents/twitter-web-app/app/models/post.rb:2: syntax error, unexpected '}', expecting end
+...ence:true,length:{maximum:140}}
+...                              ^):
+  
+app/models/post.rb:2: syntax error, unexpected '{', expecting end
+app/models/post.rb:2: syntax error, unexpected '}', expecting end
+app/controllers/posts_controller.rb:13:in `create'
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.3ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (367.7ms)
+Started POST "/posts/create" for ::1 at 2020-05-03 16:31:55 +0530
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vLZvqjpl/XiSLX7Krw5XxKqLT/R78HeLhb4hFuNsgQJ4Kw0HlzTzz6HkcHXJTD3R3lgSAqH+DSqGpEptnn/rFQ==", "contents"=>""}
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/thehi/Documents/twitter-web-app/app/models/post.rb:2: syntax error, unexpected '{', expecting end
+    validates:content {presence:true,length:{maximum...
+                      ^
+C:/Users/thehi/Documents/twitter-web-app/app/models/post.rb:2: syntax error, unexpected '}', expecting end
+...ence:true,length:{maximum:140}}
+...                              ^):
+  
+app/models/post.rb:2: syntax error, unexpected '{', expecting end
+app/models/post.rb:2: syntax error, unexpected '}', expecting end
+app/controllers/posts_controller.rb:13:in `create'
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.8ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.1ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (162.3ms)
+Started POST "/posts/create" for ::1 at 2020-05-03 16:32:37 +0530
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vLZvqjpl/XiSLX7Krw5XxKqLT/R78HeLhb4hFuNsgQJ4Kw0HlzTzz6HkcHXJTD3R3lgSAqH+DSqGpEptnn/rFQ==", "contents"=>""}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 276ms (ActiveRecord: 11.3ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-05-03 16:32:38 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 124ms (Views: 104.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/posts/5" for ::1 at 2020-05-03 16:32:43 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 115ms (Views: 79.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/5/edit" for ::1 at 2020-05-03 16:32:46 +0530
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 104ms (Views: 84.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/posts/5/update" for ::1 at 2020-05-03 16:32:51 +0530
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WQQVgdQE1rim/FRMOphx2Vddc/EHCur78kcSzo0FbbpD7+QLUL2HtnM1LUIfDPr+RKhGPv60viCpEsZmMN6M9w==", "content"=>"I think it's time for a short break... Master White was kind enough to buy me some coffee and cake, so I think I'll have them now! Need the energy to keep working on the Rails course!", "id"=>"5"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 16ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-05-03 16:32:51 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 110ms (Views: 104.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/5" for ::1 at 2020-05-03 16:32:56 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 91ms (Views: 77.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/5/edit" for ::1 at 2020-05-03 16:32:59 +0530
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 88ms (Views: 79.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/posts/5/update" for ::1 at 2020-05-03 16:33:02 +0530
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vupWTbQ2zyb8S61ggx/9cIWocRTO0MSWnMfRo9+onbakAafHMI+eKCmC1G6mi3ZXll1E2zdukE3HkgULYnN8+w==", "content"=>"new\r\n", "id"=>"5"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 106ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-05-03 16:33:02 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 66ms (Views: 63.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/5" for ::1 at 2020-05-03 16:33:04 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 81ms (Views: 74.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for ::1 at 2020-05-03 16:33:06 +0530
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 63ms (Views: 59.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/create" for ::1 at 2020-05-03 16:33:08 +0530
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4DrKUlkj+w3A+Gplm9NareeeC1lDZ7ekudA6ABd4oUMkp6j/9HL1uvMxZNr9kTC4k01Wr5lpzQW6ylF7amvLVA==", "contents"=>""}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 11ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-05-03 16:33:08 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 176ms (Views: 173.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/5" for ::1 at 2020-05-03 16:37:57 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 263ms (Views: 219.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/posts/5/edit" for ::1 at 2020-05-03 16:38:01 +0530
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 157ms (Views: 151.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/posts/5/update" for ::1 at 2020-05-03 16:38:07 +0530
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hHzTugdXN1T5ppFyXCgvh8lLY6TM3sAAdx3WbvZkuVmelyIwg+5mWixv6Hx5vKSg2r5WazVglNssSALGS79YFA==", "content"=>"new\r\nI think it's time for a short break... Master White was kind enough to buy me some coffee and cake, so I think I'll have them now! Need the energy to keep working on the Rails course!", "id"=>"5"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 81ms (Views: 71.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/posts/5/update" for ::1 at 2020-05-03 17:20:20 +0530
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/5U2fTgyxOv8S0MRWx6YwXHL+9QIZ+WW7aVkjQTVvcY1rWhhd5yNx+wiji1nEPc+zupP5C8eUX43mcjfZjzIng==", "content"=>"new\r\n now! Need the energy to keep working on the Rails course!", "id"=>"5"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.7ms)[0m  [1m[33mUPDATE "posts" SET "content" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["content", "new\r\n now! Need the energy to keep working on the Rails course!"], ["updated_at", "2020-05-03 11:50:21.052493"], ["id", 5]]
+  [1m[35m (16.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 81ms (ActiveRecord: 24.1ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-05-03 17:20:21 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 121ms (Views: 113.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/5" for ::1 at 2020-05-03 17:22:58 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 95ms (Views: 72.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/posts/5/edit" for ::1 at 2020-05-03 17:23:00 +0530
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 155ms (Views: 116.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/posts/5/update" for ::1 at 2020-05-03 17:23:15 +0530
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AkRaH03qL3KDMm4VJXBZlErlXBYJohDCaVVMeiGz1kcYr6uVyVN+fFb7FxsA5NKzWRBp2fAcRBkyAJjSnGg3Cg==", "content"=>"new\r\n now! Need the energy to keep working on the Rails course!dksadsa\r\ndsa\r\ndsa\r\nasfasfasfsafasfasfsafsafafasfsfsaf\r\nsafsaf\r\nasfasfsafsfsafsfsdfsdfsefefefewfege gegefgegegege", "id"=>"5"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 226ms (Views: 184.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/new" for ::1 at 2020-05-03 17:26:39 +0530
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (13.2ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `contents' for #<Post id: nil, content: nil, created_at: nil, updated_at: nil>
+Did you mean?  content
+               content?
+               content=):
+     9:           <%= message %>
+    10:         </div>
+    11:       <% end %>
+    12:         <textarea name="contents"><%= @post.contents %></textarea>
+    13:         <input type="submit" value="Post">
+    14:       </div>
+    15:     </div>
+  
+app/views/posts/new.html.erb:12:in `block in _app_views_posts_new_html_erb__843773834_78218300'
+app/views/posts/new.html.erb:4:in `_app_views_posts_new_html_erb__843773834_78218300'
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.6ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (100.6ms)
+Started GET "/posts/new" for ::1 at 2020-05-03 17:26:57 +0530
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 116ms (Views: 91.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/create" for ::1 at 2020-05-03 17:27:18 +0530
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A6Ag9BYwQnbAuo32gv8cwjbcedp1ISJpCjr0MIAwBCPJmH7oWZ4LWtDTQMq+8XM9if3N6lJYloHQBlhi4tlxew==", "contents"=>"djhdfhdfhd ggdhfdlsfdfgh dgkdfhkdg dgidhgkighakdsgh dghidhfdaskgh dgikdfkdhg gdkdgkd sfjkdhfjkads gs aghdgh dggdksjgha ghdskjdhgkjadh dshfhdsjhskfh aa ahfda dfsna sehefhesif sfaeefhiseiesh se aeh s fsdff dsfkf"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 83ms (Views: 77.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/posts/create" for ::1 at 2020-05-03 17:27:25 +0530
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iY+er9xqa4ZbE0YTL8sY91FIMpYVrK1HJik9rQjHXFBDt8Czk8Qiqkt6iy8TxXcI7mmGpjLVGa/8FZH/ai4pCA==", "contents"=>"Hellonew"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "posts" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "Hellonew"], ["created_at", "2020-05-03 11:57:26.008826"], ["updated_at", "2020-05-03 11:57:26.008826"]]
+  [1m[35m (24.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 50ms (ActiveRecord: 26.2ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-05-03 17:27:26 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 100ms (Views: 96.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/new" for ::1 at 2020-05-03 18:40:04 +0530
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 118ms (Views: 101.2ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/posts/create" for ::1 at 2020-05-03 18:40:10 +0530
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MTYR6uAWrOxiFCRlkTZzeuHuEDEAq8KU+KZ8xMlptKf1q3NHTUeiW1HdKtr3dBlvlT1Nx9qluDX7vBe/tHresA==", "contents"=>"New new\r\n"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "posts" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "New new\r\n"], ["created_at", "2020-05-03 13:10:10.767496"], ["updated_at", "2020-05-03 13:10:10.767496"]]
+  [1m[35m (23.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 41ms (ActiveRecord: 25.3ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-05-03 18:40:10 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 99ms (Views: 93.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-05-03 18:40:14 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (41.5ms)
+Completed 200 OK in 130ms (Views: 124.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/3" for ::1 at 2020-05-03 18:40:18 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 87ms (Views: 80.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/posts/3/destroy" for ::1 at 2020-05-03 18:40:20 +0530
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"a3J1c2K56fJ9esDnkptFC8e/R3kng8S9GTcma3jXDp6hSitvLReg3m0TDduulSr0eJ7zSQD6cFXDC4o5Gj57xg==", "id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 3]]
+  [1m[35m (15.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 33ms (ActiveRecord: 18.2ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-05-03 18:40:20 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 69ms (Views: 65.4ms | ActiveRecord: 0.3ms)
+
+
