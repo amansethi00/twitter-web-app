@@ -6371,3 +6371,271 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 57ms (Views: 52.6ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/users/index" for ::1 at 2020-05-06 00:43:06 +0530
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 97ms (Views: 88.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/1" for ::1 at 2020-05-06 00:43:09 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 55ms (Views: 50.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/signup" for ::1 at 2020-05-06 00:43:18 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"signup"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    2:   <div class="container">
+    3:     <div class="user">
+    4:       
+    5:       <h2><%= @user.name %></h2>
+    6:       
+    7:       <p><%=@user.email %></p>
+    8:     </div>
+  
+app/views/users/show.html.erb:5:in `_app_views_users_show_html_erb__897654711_111713580'
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (55.3ms)
+Started GET "/users/signup" for ::1 at 2020-05-06 00:46:24 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"signup"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    2:   <div class="container">
+    3:     <div class="user">
+    4:       
+    5:       <h2><%= @user.name %></h2>
+    6:       
+    7:       <p><%=@user.email %></p>
+    8:     </div>
+  
+app/views/users/show.html.erb:5:in `_app_views_users_show_html_erb__897654711_113806100'
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.3ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (63.9ms)
+Started GET "/users/signup" for ::1 at 2020-05-06 00:48:18 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"signup"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    2:   <div class="container">
+    3:     <div class="user">
+    4:       
+    5:       <h2><%= @user.name %></h2>
+    6:       
+    7:       <p><%=@user.email %></p>
+    8:     </div>
+  
+app/views/users/show.html.erb:5:in `_app_views_users_show_html_erb__897654711_99430760'
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (54.4ms)
+Started GET "/users/signup" for ::1 at 2020-05-06 00:48:23 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"signup"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    2:   <div class="container">
+    3:     <div class="user">
+    4:       
+    5:       <h2><%= @user.name %></h2>
+    6:       
+    7:       <p><%=@user.email %></p>
+    8:     </div>
+  
+app/views/users/show.html.erb:5:in `_app_views_users_show_html_erb__897654711_110867580'
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.3ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (72.7ms)
+Started GET "/signup" for ::1 at 2020-05-06 00:50:01 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 101ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/signup" for ::1 at 2020-05-06 00:50:07 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"signup"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    2:   <div class="container">
+    3:     <div class="user">
+    4:       
+    5:       <h2><%= @user.name %></h2>
+    6:       
+    7:       <p><%=@user.email %></p>
+    8:     </div>
+  
+app/views/users/show.html.erb:5:in `_app_views_users_show_html_erb__897654711_101644140'
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.4ms)
+Started GET "/users/signup" for ::1 at 2020-05-06 00:50:37 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"signup"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    2:   <div class="container">
+    3:     <div class="user">
+    4:       
+    5:       <h2><%= @user.name %></h2>
+    6:       
+    7:       <p><%=@user.email %></p>
+    8:     </div>
+  
+app/views/users/show.html.erb:5:in `_app_views_users_show_html_erb__897654711_110406900'
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (56.1ms)
+Started GET "/" for ::1 at 2020-05-06 00:50:41 +0530
+Processing by HomeController#top as HTML
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 66ms (Views: 57.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2020-05-06 00:50:43 +0530
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 71ms (Views: 47.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/signup" for ::1 at 2020-05-06 00:50:45 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 52ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2020-05-06 02:07:50 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/thehi/Documents/twitter-web-app/app/views/users/new.html.erb:21: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/users/new.html.erb:21: syntax error, unexpected ensure, expecting end-of-input
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.4ms)
+Started GET "/signup" for ::1 at 2020-05-06 02:09:03 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 170ms (Views: 146.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/create" for ::1 at 2020-05-06 02:09:11 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4xQH85VCWWWQxq8w9j2iyS4qhKtij/UOnMB8pbRDV8ApLFnv2uwQSYCvYgzKM802kQswm0X2QeZG/ND31qoimA==", "name"=>"Aman Sethi", "email"=>"zoolootoopop@gmail.com"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Aman Sethi"], ["email", "zoolootoopop@gmail.com"], ["created_at", "2020-05-05 20:39:11.216651"], ["updated_at", "2020-05-05 20:39:11.216651"]]
+  [1m[35m (14.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/12
+Completed 302 Found in 38ms (ActiveRecord: 17.2ms)
+
+
+Started GET "/users/12" for ::1 at 2020-05-06 02:09:11 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 65ms (Views: 58.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/index" for ::1 at 2020-05-06 02:09:14 +0530
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 66ms (Views: 60.8ms | ActiveRecord: 0.3ms)
+
+
