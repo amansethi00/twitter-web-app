@@ -6081,3 +6081,192 @@ Migrating to CreateUsers (20200505115627)
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
   [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ken the Ninja"], ["email", "ken@prog-8.com"], ["created_at", "2020-05-05 12:03:32.147926"], ["updated_at", "2020-05-05 12:03:32.147926"]]
   [1m[35m (15.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Master"], ["email", "master@prog-8.com"], ["created_at", "2020-05-05 12:13:17.239958"], ["updated_at", "2020-05-05 12:13:17.239958"]]
+  [1m[35m (14.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Master"], ["email", "master@prog-8.com"], ["created_at", "2020-05-05 12:14:23.334144"], ["updated_at", "2020-05-05 12:14:23.334144"]]
+  [1m[35m (16.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Master"], ["email", "master@prog-8.com"], ["created_at", "2020-05-05 12:16:02.808845"], ["updated_at", "2020-05-05 12:16:02.808845"]]
+  [1m[35m (16.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mastr"], ["email", "master@prog-8.com"], ["created_at", "2020-05-05 12:16:20.003473"], ["updated_at", "2020-05-05 12:16:20.003473"]]
+  [1m[35m (16.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Master"], ["email", "master@prog-8.com"], ["created_at", "2020-05-05 12:21:21.100111"], ["updated_at", "2020-05-05 12:21:21.100111"]]
+  [1m[35m (16.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mater"], ["email", "master@prog-8.com"], ["created_at", "2020-05-05 12:21:32.226767"], ["updated_at", "2020-05-05 12:21:32.226767"]]
+  [1m[35m (14.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mater"], ["email", "master@prog-8.com"], ["created_at", "2020-05-05 12:25:12.468059"], ["updated_at", "2020-05-05 12:25:12.468059"]]
+  [1m[35m (16.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mater"], ["email", "master@prog-8.com"], ["created_at", "2020-05-05 12:31:11.534878"], ["updated_at", "2020-05-05 12:31:11.534878"]]
+  [1m[35m (15.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mater"], ["email", "master@prog-8.com"], ["created_at", "2020-05-05 17:39:22.636524"], ["updated_at", "2020-05-05 17:39:22.636524"]]
+  [1m[35m (16.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mater"], ["email", "master@prog-8.com"], ["created_at", "2020-05-05 17:42:05.705122"], ["updated_at", "2020-05-05 17:42:05.705122"]]
+  [1m[35m (19.1ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for ::1 at 2020-05-05 23:13:22 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#top as HTML
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (26.7ms)
+Started GET "/" for ::1 at 2020-05-05 23:13:27 +0530
+Completed 200 OK in 2141ms (Views: 2043.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-05-05 23:13:38 +0530
+Processing by HomeController#top as HTML
+Processing by HomeController#top as HTML
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (0.3ms)
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 120ms (Views: 111.1ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 128ms (Views: 118.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2020-05-05 23:14:39 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#about as HTML
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 330ms (Views: 310.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-05-05 23:14:55 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 155ms (Views: 116.2ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/posts/new" for ::1 at 2020-05-05 23:15:07 +0530
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 119ms (Views: 91.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/create" for ::1 at 2020-05-05 23:15:20 +0530
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EK6IIt0+ZpCtNyyoyUUQlJoPbErbjRwpERUvzS7IIpjUM+qPcG9oJ57+IhevB3qB7twxvAGDZogSD0S2U9tIjw==", "contents"=>"dashjsad"}
+  [1m[35m (2.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "posts" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "dashjsad"], ["created_at", "2020-05-05 17:45:20.334830"], ["updated_at", "2020-05-05 17:45:20.334830"]]
+  [1m[35m (20.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 67ms (ActiveRecord: 24.1ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-05-05 23:15:20 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 104ms (Views: 99.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/9" for ::1 at 2020-05-05 23:15:55 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 144ms (Views: 81.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/posts/9/edit" for ::1 at 2020-05-05 23:15:57 +0530
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 181ms (Views: 124.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/posts/9/update" for ::1 at 2020-05-05 23:16:09 +0530
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HoBrKvxa0J1DQe14pxUrKetex5qbUtRkioYSffb6RV9NB9S1Dkr6Q+4BdGvnFMo5JVCPfB82x0wqc3R2in/aAA==", "content"=>"", "id"=>"9"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 124ms (Views: 54.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-05-05 23:16:40 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 87ms (Views: 82.5ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/about" for ::1 at 2020-05-05 23:28:01 +0530
+Processing by HomeController#about as HTML
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 577ms (Views: 572.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2020-05-05 23:28:01 +0530
+Processing by HomeController#about as HTML
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 100ms (Views: 94.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/index" for ::1 at 2020-05-05 23:28:06 +0530
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 162ms (Views: 147.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2020-05-05 23:38:05 +0530
+Processing by HomeController#about as HTML
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 134ms (Views: 128.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/index" for ::1 at 2020-05-05 23:38:06 +0530
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/thehi/Documents/twitter-web-app/app/models/user.rb:5: syntax error, unexpected ',', expecting =>
+...niqueness{case_sensitive:true},presence:true}
+...                              ^):
+  
+app/models/user.rb:5: syntax error, unexpected ',', expecting =>
+app/controllers/users_controller.rb:3:in `index'
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.9ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (207.2ms)
+Started GET "/users/index" for ::1 at 2020-05-05 23:38:50 +0530
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 211ms (Views: 143.2ms | ActiveRecord: 4.0ms)
+
+
