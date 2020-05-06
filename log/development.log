@@ -6639,3 +6639,564 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 66ms (Views: 60.8ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/signup" for ::1 at 2020-05-06 02:55:17 +0530
+  
+SyntaxError (C:/Users/thehi/Documents/twitter-web-app/app/controllers/users_controller.rb:20: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/users_controller.rb:20: syntax error, unexpected end-of-input, expecting end
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.0ms)
+Started GET "/signup" for ::1 at 2020-05-06 02:55:51 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 156ms (Views: 103.1ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/users/create" for ::1 at 2020-05-06 02:55:54 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O/gaFGXX9SAJ3q5iVP7lOpSkHnPspftTyaMtYtow2X/xwEQIKnm8DBm3Y15o8IrFK4WqQ8vcT7sTn4EwuNmsJw==", "name"=>"", "email"=>""}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::MissingTemplate (Missing template /signup with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/thehi/Documents/twitter-web-app/app/views"
+):
+  
+app/controllers/users_controller.rb:18:in `create'
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.9ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (69.1ms)
+Started POST "/users/create" for ::1 at 2020-05-06 02:56:11 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O/gaFGXX9SAJ3q5iVP7lOpSkHnPspftTyaMtYtow2X/xwEQIKnm8DBm3Y15o8IrFK4WqQ8vcT7sTn4EwuNmsJw==", "name"=>"", "email"=>""}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 83ms (Views: 65.5ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/users/create" for ::1 at 2020-05-06 02:56:20 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rBUUy5TvW5LF4mR2V1pC6js86qFbZ880BOA1XxGemvJmLUrX20ESvtWLqUprVC0VhB1ekXwee9ze3JkNc3fvqg==", "name"=>"fds", "email"=>""}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "fds"], ["email", ""], ["created_at", "2020-05-05 21:26:20.224048"], ["updated_at", "2020-05-05 21:26:20.224048"]]
+  [1m[35m (22.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/13
+Completed 302 Found in 35ms (ActiveRecord: 23.5ms)
+
+
+Started GET "/users/13" for ::1 at 2020-05-06 02:56:20 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 194ms (Views: 184.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/13" for ::1 at 2020-05-06 02:58:40 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 128ms (Views: 83.7ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-05-06 02:58:44 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 82ms (Views: 61.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts/9" for ::1 at 2020-05-06 02:58:47 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 90ms (Views: 67.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/index" for ::1 at 2020-05-06 02:58:54 +0530
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 64ms (Views: 59.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/13" for ::1 at 2020-05-06 02:58:58 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 95ms (Views: 88.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2020-05-06 02:59:00 +0530
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 58ms (Views: 54.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2020-05-06 02:59:02 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 86ms (Views: 79.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/create" for ::1 at 2020-05-06 02:59:04 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YHHti/lUVTiDrQKNRauDafNirOYiq7rJumvT30yAqMVq7groIFy7ZHegR/sHkkCThLgEjLJYhdiv2qk1FLRocg==", "name"=>"", "email"=>""}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 65ms (Views: 57.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users/create" for ::1 at 2020-05-06 03:14:38 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NgEmtwLB+ev9uxDUXk2efjwhooem8JnEgG76QDm/BSH8OXirTW+wx+3S3ehiQ/GBgwAWt4GJLSxaUlYSW1ZweQ==", "name"=>"fvf", "email"=>"ff"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "fvf"], ["email", "ff"], ["created_at", "2020-05-05 21:44:38.828682"], ["updated_at", "2020-05-05 21:44:38.828682"]]
+  [1m[35m (13.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/14
+Completed 302 Found in 24ms (ActiveRecord: 15.3ms)
+
+
+Started GET "/users/14" for ::1 at 2020-05-06 03:14:38 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 63ms (Views: 58.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-05-06 03:35:28 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 76ms (Views: 64.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/posts/8" for ::1 at 2020-05-06 03:35:31 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 75ms (Views: 68.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/8/edit" for ::1 at 2020-05-06 03:35:32 +0530
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 189ms (Views: 157.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/posts/8/update" for ::1 at 2020-05-06 03:50:24 +0530
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"g3fs2FPWvzUTTLKr4+TlisqvRl6wWeFn3DHmD4W78mJet7W1KyLi+AOmMZXV2cOeJ/e/7hoACMGqN5l5z08ckw==", "content"=>"New new\r\nkem", "id"=>"8"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  [1m[33mUPDATE "posts" SET "content" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["content", "New new\r\nkem"], ["updated_at", "2020-05-05 22:20:24.291809"], ["id", 8]]
+  [1m[35m (20.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 58ms (ActiveRecord: 25.7ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-05-06 03:50:24 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 107ms (Views: 99.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/8" for ::1 at 2020-05-06 03:50:30 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 78ms (Views: 69.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/8/edit" for ::1 at 2020-05-06 03:50:32 +0530
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 80ms (Views: 59.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/posts/8/update" for ::1 at 2020-05-06 03:50:36 +0530
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7eiIdN47heoGQYOve+v+CUjUA3TKYLhGLkY0iPCnHicwKNEZps/YJxarAJFN1tgdpYz6xGA5UeBYQEv+ulPw1g==", "content"=>"", "id"=>"8"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 163ms (Views: 145.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/index" for ::1 at 2020-05-06 03:50:41 +0530
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 75ms (Views: 64.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/1" for ::1 at 2020-05-06 03:50:43 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 68ms (Views: 54.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/index" for ::1 at 2020-05-06 03:50:46 +0530
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 91ms (Views: 87.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/2" for ::1 at 2020-05-06 03:50:47 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 106ms (Views: 99.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/index" for ::1 at 2020-05-06 03:50:54 +0530
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 87ms (Views: 82.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/4" for ::1 at 2020-05-06 03:50:57 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 82ms (Views: 75.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/5" for ::1 at 2020-05-06 03:51:46 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 76ms (Views: 66.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/8" for ::1 at 2020-05-06 03:52:09 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 69ms (Views: 63.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/8" for ::1 at 2020-05-06 03:52:47 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 106ms (Views: 86.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/8/edit" for ::1 at 2020-05-06 03:52:50 +0530
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 96ms (Views: 71.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users/:id/update" for ::1 at 2020-05-06 03:52:55 +0530
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zKzTBwAW+nyfIK6bb10TJLB1DNnUM/brYhqkJMyLuPxnhhygAHVNED+PdPq8PAKdpFZMKXN/s7nr5VDoZwvruA==", "id"=>":id"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `name=' for nil:NilClass):
+  
+app/controllers/users_controller.rb:27:in `update'
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.4ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.7ms)
+Started POST "/users/:id/update" for ::1 at 2020-05-06 03:54:14 +0530
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zKzTBwAW+nyfIK6bb10TJLB1DNnUM/brYhqkJMyLuPxnhhygAHVNED+PdPq8PAKdpFZMKXN/s7nr5VDoZwvruA==", "id"=>":id"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `name=' for nil:NilClass):
+  
+app/controllers/users_controller.rb:27:in `update'
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.1ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.5ms)
+Started POST "/users/:id/update" for ::1 at 2020-05-06 03:54:28 +0530
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CAx3O/nwqcATgKlmnj3p/d7ZLRoZ/XO4+5ynGbuUHkXCNCkntl7g7APpZFqiM4YCYfiZKj6Ex1AhoAtL2X1rHQ==", "id"=>":id"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `name=' for nil:NilClass):
+  
+app/controllers/users_controller.rb:27:in `update'
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.7ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.6ms)
+Started POST "/users/:id/update" for ::1 at 2020-05-06 03:55:32 +0530
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CAx3O/nwqcATgKlmnj3p/d7ZLRoZ/XO4+5ynGbuUHkXCNCkntl7g7APpZFqiM4YCYfiZKj6Ex1AhoAtL2X1rHQ==", "id"=>":id"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `name=' for nil:NilClass):
+  
+app/controllers/users_controller.rb:27:in `update'
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.2ms)
+Started POST "/users/:id/update" for ::1 at 2020-05-06 03:58:25 +0530
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CAx3O/nwqcATgKlmnj3p/d7ZLRoZ/XO4+5ynGbuUHkXCNCkntl7g7APpZFqiM4YCYfiZKj6Ex1AhoAtL2X1rHQ==", "id"=>":id"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `name=' for nil:NilClass):
+  
+app/controllers/users_controller.rb:27:in `update'
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.3ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.1ms)
+Started POST "/users/:id/update" for ::1 at 2020-05-06 03:58:32 +0530
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CAx3O/nwqcATgKlmnj3p/d7ZLRoZ/XO4+5ynGbuUHkXCNCkntl7g7APpZFqiM4YCYfiZKj6Ex1AhoAtL2X1rHQ==", "id"=>":id"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `name=' for nil:NilClass):
+  
+app/controllers/users_controller.rb:27:in `update'
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.5ms)
+Started POST "/users/:id/update" for ::1 at 2020-05-06 04:00:05 +0530
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CAx3O/nwqcATgKlmnj3p/d7ZLRoZ/XO4+5ynGbuUHkXCNCkntl7g7APpZFqiM4YCYfiZKj6Ex1AhoAtL2X1rHQ==", "id"=>":id"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.9ms)
+
+
+  
+NoMethodError (undefined method `name=' for nil:NilClass):
+  
+app/controllers/users_controller.rb:27:in `update'
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (75.8ms)
+Started GET "/users/index" for ::1 at 2020-05-06 04:03:26 +0530
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 85ms (Views: 78.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/1" for ::1 at 2020-05-06 04:03:28 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 163ms (Views: 147.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/edit" for ::1 at 2020-05-06 04:03:30 +0530
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 86ms (Views: 63.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users/1/update" for ::1 at 2020-05-06 04:03:37 +0530
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A9tOgqDZohOKHwDKnFU/5glxuUCHxSEhBh53FAyFVlG2ndXm1ctC7S82LriuISe1HaBLRRfBEjAdUTrjFL1lZw==", "name"=>"", "email"=>"ken@prog-8.com", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.5ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/users_controller.rb:33:in `update'
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.5ms)
+Started POST "/users/1/update" for ::1 at 2020-05-06 04:04:21 +0530
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VuTf5l6CVjNcRDdcEJMKoSLv/SA4J1ZbJsSihxyuuwyc3IH6ESwfH0wt+mAsnWVenc5JEB9e4rP8+A7VfkfOVA==", "name"=>"d", "email"=>"ken@prog-8.com", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[33mUPDATE "users" SET "name" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["name", "d"], ["updated_at", "2020-05-05 22:34:21.748455"], ["id", 1]]
+  [1m[35m (14.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 30ms (ActiveRecord: 16.1ms)
+
+
+Started GET "/users/1" for ::1 at 2020-05-06 04:04:21 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 76ms (Views: 70.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/edit" for ::1 at 2020-05-06 04:04:24 +0530
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 84ms (Views: 76.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/1/update" for ::1 at 2020-05-06 04:04:48 +0530
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yt9ZHLczOqmreVnAKOSzdqJOf+bGmOaFSjFzeeS/LkF/mcJ4wiHaVw5Qd7IakKsltp+N41ac1ZRRfj6O/Icddw==", "name"=>"", "email"=>"ken@prog-8.com", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::MissingTemplate (Missing template users/1/edit with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/thehi/Documents/twitter-web-app/app/views"
+):
+  
+app/controllers/users_controller.rb:33:in `update'
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (52.8ms)
+Started POST "/users/1/update" for ::1 at 2020-05-06 04:06:14 +0530
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yt9ZHLczOqmreVnAKOSzdqJOf+bGmOaFSjFzeeS/LkF/mcJ4wiHaVw5Qd7IakKsltp+N41ac1ZRRfj6O/Icddw==", "name"=>"", "email"=>"ken@prog-8.com", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 95ms (Views: 72.1ms | ActiveRecord: 2.0ms)
+
+
