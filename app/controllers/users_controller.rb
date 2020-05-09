@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   before_action:authenticate_user,{only: [:edit,:index,:show,:update]}
   before_action :forbid_login_user,{only:[:login,:login_form,:new,:create]}
+  before_action :ensure_correct_user,{only:[:edit,:update]}
   def index
     @users=User.all
   end
@@ -66,5 +67,11 @@ class UsersController < ApplicationController
     session[:user_id]=nil
     flash[:notice]="You have been logged out successfully!!"
     redirect_to("/login")
+  end
+  def ensure_correct_user
+    if @current_user.id!=params[:id].to_i
+      flash[:notice]="Unauthorized Access!!"
+      redirect_to("/posts/index")
+    end
   end
 end
