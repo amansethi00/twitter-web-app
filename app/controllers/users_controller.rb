@@ -51,8 +51,8 @@ class UsersController < ApplicationController
       
     end
     def login
-      @user=User.find_by(email: params[:email],password: params[:password])
-      if @user
+      @user=User.find_by(email: params[:email])
+      if @user && @user.authenticate(params[:password])
         flash[:notice]="You have logged in successfully!!"
         session[:user_id]=@user.id
         redirect_to("/posts/index")
