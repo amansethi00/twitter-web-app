@@ -6,5 +6,5 @@ This web app is made using Ruby on Rails and database used is SQLite.The feature
 4.Option to signup is provided.
 5.Users can change their profile pictures from a default picture already set when creating profile.
 
-* Ruby version -2.6
+* Ruby version- 2.6
 * Database - SQLite 3
