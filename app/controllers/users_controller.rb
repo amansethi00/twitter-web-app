@@ -21,7 +21,7 @@ class UsersController < ApplicationController
     if @user.save
       flash[:notice]="You have signed up successfully!!"
       session[:user_id]=@user.id
-      redirect_to("/users/#{@user.id}")
+      redirect_to("/posts/index")
     else
 
       render("/users/new")
